@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Rooms{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <h2>Rooms</h2>
+    <ul>
+      {% for room in rooms %}
+        <li>
+           {{room}}
+        </li>
+      {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
